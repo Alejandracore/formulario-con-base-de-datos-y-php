@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro de estudiante </title>
+</head>
+<body>
+ 
+<Form action>
+ <fieldset>
+    <legend>Formulario de registo de estudiantes </legend><br>
+
+    <label for="">Cedula</label>
+    <input type="number" placeholder="Cedula"> <br><br>
+
+    <label for="">Nombre</label>
+    <input type="Text" placeholder="Nombre"><br><br>
+
+    <label for="">Apellido</label>
+    <input type="text" placeholder="Apellido"><br><br>
+
+    <label for="">Sexo</label>
+    <input type ="radio" placeholder="Sexo"> femenino 
+   <input type ="radio" placeholder="Sexo"> Masculino
+    <br><br>
+
+    <label for="">Carrera</label>
+    
+
+        <select>
+        <option value="0">
+            Selecionar Carrera
+        </option>
+        <option value="1">
+            Mercadeo
+        </option>
+        <option value="3">
+            Contabilidad
+        </option>
+        <option value="4">
+            Agronomia
+        </option>
+        <option value="5">
+            Ingenieria en sistemas
+        </option>
+    </select>
+    <br> <br>
+
+    <label for="">Matricula</label>
+    <input type="Text" placeholder="Matricula"><br><br>
+
+    <label for="">Direccion</label>
+    <input type="text" placeholder="Direccion"><br><br>
+
+    <label for="">Telefono</label>
+    <input type="text" placeholder="Numero Telefonico"><br><br>
+
+    <label for="">Email</label>
+    <input type="text" placeholder="Correo Electronico"><br><br>
+
+    <label for="">Ciudad</label>
+    
+        <select>
+        <option value="0">
+            Selecionar Ciudad
+        </option>
+        <option value="1">
+            Santo Domingo
+        </option>
+        <option value="3">
+            Santiago 
+        </option>
+        <option value="4">
+            Puerto Plata
+        </option>
+        <option value="5">
+            La Romana
+        </option>
+    </select>
+    <br><br>
+    <label for="">Provincia</label>
+    
+        <select>
+        <option value="0">
+            Selecionar Provincia
+        </option>
+        <option value="1">
+            Valverde
+        </option>
+        <option value="3">
+            Montecristi
+        </option>
+        <option value="4">
+            Dajabon
+        </option>
+        <option value="5">
+            Santiago Rodriguez
+        </option>
+    </select>
+    <br><br>
+    <label for="">Fecha de Nacimiento</label>
+    <input type="date" placeholder="Fecha de Nacimiento"><br><br>
+ 
+    <label>Comentarios</label><br>
+    <textarea rows="4" cols="40" placeholder="Escriba aquí..."></textarea>
+    <br>
+    <input type="submit" value="Enviar formulario">
+
+
+</fieldset>
+</Form>
+
+</body>
+</html>
