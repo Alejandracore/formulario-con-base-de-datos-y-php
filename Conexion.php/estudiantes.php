@@ -16,13 +16,13 @@
                     
                     <div>
                         <label for =""> Nombre </label>
-                        <input type="text" name ="Nombre" placeholder = "Ingrese su nombre">
+                        <input type="text" name ="Nombre" placeholder = "Ingrese su nombre" >
                     </div>
                     <br>
 
                     <div>
                         <label for =""> Apellido </label>
-                        <input type="text" name ="Apellido" placeholder = "Ingrese su Apellido">
+                        <input type="text" name ="Apellido" placeholder = "Ingrese su Apellido" >
                     </div>
                     <br>
                     <div>
@@ -52,5 +52,7 @@
             </div>   
         </div>
     </fieldset>
+
+  
 </body>
 </html>
