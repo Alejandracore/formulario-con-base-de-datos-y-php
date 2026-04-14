@@ -28,8 +28,8 @@ die("problemas con la conexion");
                 <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Email</th>
                 <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Telefono</th>
                 <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Matricula</th>
-                <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Accion</th>
-                
+                <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Editar</th>
+                <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Eliminar</th>
             </tr>
         </thead>
         <tbody class="bg-white">
@@ -45,9 +45,15 @@ die("problemas con la conexion");
                 <td class="py-4 px-6 border-b border-gray-200"><?php echo $row['Telefono']; ?></td>
                 <td class="py-4 px-6 border-b border-gray-200"><?php echo $row['Matricula']; ?></td>
                 <td class="py-4 px-6 border-b border-gray-200">
-                    <a href="estudiantes copy.php?id=<?php echo $row['id_estudiante']; ?>" 
+                    <a href="estudiantes_editar.php?id=<?php echo $row['id_estudiante']; ?>" 
                     class="bg-red-500 text-white py-1 px-2 rounded-full text-xs">
                     Editar
+                    </a>
+                </td>
+                <td class="py-4 px-6 border-b border-gray-200">
+                    <a href="estudiantes_eliminar.php?id=<?php echo $row['id_estudiante']; ?>" 
+                    class="bg-red-500 text-white py-1 px-2 rounded-full text-xs">
+                    Eliminar
                     </a>
                 </td>
             </tr>
@@ -57,6 +63,7 @@ die("problemas con la conexion");
             <tr>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200 truncate"></td>
+                <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
@@ -72,7 +79,8 @@ die("problemas con la conexion");
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
-              
+                <td class="py-4 px-6 border-b border-gray-200"></td>
+               
             </tr>
             <tr>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
@@ -82,10 +90,17 @@ die("problemas con la conexion");
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
                 <td class="py-4 px-6 border-b border-gray-200"></td>
-            </tr>
+                <td class="py-4 px-6 border-b border-gray-200"></td>
+               
+            </tr>  
         </tbody>
     </table>
-</div>
 
+    
+</div>
+            <a href="estudiantes.php" 
+                class="inline-block mt-4 ml-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                ⬅ Volver a Insertar
+            </a> 
 </body>
 </html>
